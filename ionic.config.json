@@ -1,0 +1,7 @@
+{
+  "name": "solar-charger",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
