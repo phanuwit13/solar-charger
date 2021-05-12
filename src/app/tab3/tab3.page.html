@@ -26,27 +26,29 @@
     <p>CB = กระแสแบตเตอรี่</p>
     <p>CS = กระแสโซลาร์</p>
     <h5>ตารางแสดงประวัติการชาร์จ</h5>
-    <table class="table table-bordered">
-      <thead>
-        <tr class="table-warning align-middle">
-          <th class="align-middle text-center" scope="col">Date</th>
-          <th class="align-middle text-center" scope="col">Time</th>
-          <th class="align-middle text-center" scope="col">VB</th>
-          <th class="align-middle text-center" scope="col">VS</th>
-          <th class="align-middle text-center" scope="col">CB</th>
-          <th class="align-middle text-center" scope="col">CS</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let item of dataShow">
-          <td class="align-middle">{{item[0].substring(5)}}</td>
-          <td class="align-middle">{{item[1].substring(5)}}</td>
-          <td class="align-middle">{{item[2].substring(3)}}</td>
-          <td class="align-middle">{{item[3].substring(3)}}</td>
-          <td class="align-middle">{{item[4].substring(3)}}</td>
-          <td class="align-middle">{{item[5].substring(3)}}</td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="container contain-table">
+      <table class="table table-bordered">
+        <thead>
+          <tr class="table-warning align-middle">
+            <th class="align-middle text-center" scope="col">Date</th>
+            <th class="align-middle text-center" scope="col">Time</th>
+            <th class="align-middle text-center" scope="col">VB</th>
+            <th class="align-middle text-center" scope="col">VS</th>
+            <th class="align-middle text-center" scope="col">CB</th>
+            <th class="align-middle text-center" scope="col">CS</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of dataShow">
+            <td class="align-middle">{{item[0].substring(5)}}</td>
+            <td class="align-middle">{{item[1].substring(5)}}</td>
+            <td class="align-middle">{{item[2].substring(3)}}</td>
+            <td class="align-middle">{{item[3].substring(3)}}</td>
+            <td class="align-middle">{{item[4].substring(3)}}</td>
+            <td class="align-middle">{{item[5].substring(3)}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
 </ion-content>
